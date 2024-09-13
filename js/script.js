@@ -18,7 +18,7 @@ function startGame(){
     startBtn.classList.add('hide');
     const prog = document.createElement("div");
     prog.classList.add("progress-bar");
-    prog.setAttribute("data-label", "Loading");
+    prog.setAttribute("data-label", " ");
     container.appendChild(prog);
     const progressBar=document.getElementsByClassName("progress-bar")[0];
     setInterval(() => {
