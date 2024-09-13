@@ -103,8 +103,7 @@ body.wrong{
 }
 .btn:hover{
     border-color: black;
-    background-color: #5e2a6c;
-    color: #ffc853;
+  
 }
 .btn.correct{
     --hue: var(--hue-correct);
