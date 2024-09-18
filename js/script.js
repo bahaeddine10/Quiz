@@ -16,7 +16,13 @@ let shuffledQuestions , currentQuestionIndex
 
 function startGame(){
     startBtn.classList.add('hide');
+    
     const prog = document.createElement("div");
+    const imgCard=document.createElement("div");
+    imgCard.classList.add("imageLoading");
+    imgCard.innerHTML=`<img src="./img/bg1.png" alt="loading">`
+    container.appendChild(imgCard);
+    
     prog.classList.add("progress-bar");
     prog.setAttribute("data-label", "Loading");
     container.appendChild(prog);
@@ -34,6 +40,8 @@ function startGame(){
         questionContainer.classList.remove('hide');
         setNextQuestion();   
         container.removeChild(prog);
+        container.removeChild(imgCard);
+      
     }, 2500);
    
     

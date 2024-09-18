@@ -39,6 +39,21 @@ body{
     background:url("../img/bg 2.jpg")  ;
     background-size: cover;  
 }
+.imageLoading{
+    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 10px;
+
+}
+.imageLoading img{
+    width: 100px;
+    height: 100px;
+max-width: 100%;
+    
+}
 .progress-bar{
     position: relative;
     width: 500px;
