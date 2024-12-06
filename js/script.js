@@ -5,13 +5,11 @@
 // customElements.define("robot-dev",quizRobotDev)
 // customElements.define("web-dev",quizWebDev);
 
-
 const WebDevBtn =document.querySelector("#Webdev-btn");
 const RobotDevBtn =document.querySelector("#Robotdev-btn");
 // const choose=document.querySelector("choose-quiz");
 // const web_dev=document.querySelector("web-dev");
 // const robot_dev=document.querySelector("robot-dev");
-
  WebDevBtn.addEventListener("click",()=>{
 window.location.href="./quizWebDev.html";
     
