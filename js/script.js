@@ -15,13 +15,13 @@ const RobotDevBtn =document.querySelector("#Robotdev-btn");
 // const robot_dev=document.querySelector("robot-dev");
 
  WebDevBtn.addEventListener("click",()=>{
-window.location.href="https://bahaeddine10.github.io/Quiz/index.html/quizWebDev.html";
+window.location.href="https://bahaeddine10.github.io/Quiz/quizWebDev.html";
     
 
  })
 
 RobotDevBtn.addEventListener("click",()=>{
-  window.location.href="https://bahaeddine10.github.io/Quiz/index.html/quizRobotDev.html";  
+  window.location.href="https://bahaeddine10.github.io/Quiz/quizRobotDev.html";  
 
 })
 
