@@ -1,3 +1,32 @@
+// import {ChooseQuiz} from "./ChooseQuiz.js"
+// import { quizRobotDev } from "./quizRobotDev.js";
+// import { quizWebDev } from "./quizWebDev.js";
+// customElements.define("choose-quiz",ChooseQuiz);
+// customElements.define("robot-dev",quizRobotDev)
+// customElements.define("web-dev",quizWebDev);
+
+
+// const WebDevBtn =document.querySelector("#Webdev-btn");
+// const RobotDevBtn =document.querySelector("#Robotdev-btn");
+// const choose=document.querySelector("choose-quiz");
+// const web_dev=document.querySelector("web-dev");
+// const robot_dev=document.querySelector("robot-dev");
+
+// WebDevBtn.addEventListener("click",()=>{
+//     choose.classList.add("hide");
+//     web_dev.classList.remove("hide");
+    
+
+// })
+
+// RobotDevBtn.addEventListener("click",()=>{
+//     choose.classList.add("hide");
+//     robot_dev.classList.remove("hide");
+    
+    
+
+// })
+
 const startBtn = document.getElementById('start-btn');
 const nextBtn = document.getElementById('next-btn');
 const questionContainer = document.getElementById("question-container");
@@ -132,82 +161,92 @@ function clearStatusClass(element){
 
 const questions = [
     {
-        question: `Langage de Programmation d'Arduino `,
+        question: `Which tag is used for the most important heading in HTML? `,
         answers: [
-            {text: `HTML`, correct: false},
-            {text: `C/C++`, correct: true},
-            {text: `Python`, correct: false},
-            {text: `Java`, correct: false},
+            {text: `< h6 >`, correct: true},
+            {text: `< p >`, correct: false},
+            {text: `< h1 >`, correct: true},
+         
         ]
     },
     {
-        question: `Quelle est la fonction de pinMode() en Arduino ?`,
+        question: `Which CSS property is used to set the text color?`,
         answers: [
-            {text: `Calculer la distance avec un capteur à ultrasons`, correct: false},
-            {text: `Lire la valeur d'une broche`, correct: false},
-            {text: `Ecrire une valeursur un broche`, correct: false},
-            {text: `Initaliser une broche en entrée ou sortie`, correct: true},
+            {text: `font-color`, correct: false},
+            {text: `color`, correct: true},
+            {text: `text-color`, correct: false},
+            ,
         ]
     }, {
-        question: `Quel est le but fonction delay() dans un programme Arduino ?`,
+        question: `Which tag is used to create a hyperlink in HTML?
+`,
         answers: [
-            {text: `Déclencher un signal à une broche spécifique `, correct: false},
-            {text: ` Réduire la consommation d'énergie`, correct: false},
-            {text: ` Créer un délai entre les exécution du code`, correct: true},
-            {text: `Initialiser les entrées/sorties`, correct: false}
-        ]
-    }, {
-        question: `Quelle est la plager de tension que l'Arduino peut accepter sur ses broches d'entrée ?`,
-        answers: [
-            {text: `0 à 5V`, correct: true},
-            {text: `0 à 3.3V`, correct: false},
-            {text: `0 à 12V`, correct: false},
-            {text: `1 à 5V`, correct: false},
-        ]
-    }, {
-        question: `Que fait la fonction analogWrite()`,
-        answers: [
-            {text: `Convertir un valeur analogique en numérique`, correct: false},
-            {text: `Lire une valeur qnqlogique sur une broche`, correct: false},
-            {text: `Ecrire une valeur analogique sur une broche (PWM)`, correct: true},
-            {text: `Initialiser une broche en entrée`, correct: false},
-
+            {text: `< link >  `, correct: false},
+            {text: ` < img >`, correct: false},
+            {text: ` < a > `, correct: true},
             
         ]
     }, {
-        question: `Quelle est la fonction de Serial.begin() dans un programme Arduino ? `,
+        question: `What does the 'let' keyword do in JavaScript?`,
         answers: [
-            {text: `Déclare la broche pour la communication série`, correct: false},
-            {text: `Envoie un message sur le moniteur série`, correct: false},
-            {text: `Reçoit des données sur la communication série`, correct: false},
-            {text: `Démarre la communication série à une vitesse donnée`, correct: true},
+            {text: `Declares a constant`, correct: false},
+            {text: `Declares a local variable`, correct: true},
+            {text: `Finds an element`, correct: false},
+           
+        ]
+    }, {
+        question: `The correct JAVASCRIPT syntax to change the content of the HTML element below?\n
+< p id="demo">This is JavaScript< / p >`,
+        answers: [
+            {text: `document.getElementById("demo").innerHTML="hello";`, correct: true},
+            {text: `#demo.innerHTML="hello"`, correct: false},
+            {text: `document.getelementbyname("p").innerHTML="hello";`, correct: false},
+        
+            
+        ]
+    }, {
+        question: `Which CSS property sets the background color of an element? `,
+        answers: [
+            {text: `background-color`, correct: true},
+            {text: `color`, correct: false},
+            {text: `font-size`, correct: false},
+           ,
         ]
     },
     {
-        question: `Quelle est la portée du signal PWM(Pulse Width Modulaation) Arduino ? `,
+        question: `What is the purpose of the 'getElementById' method in JavaScript? `,
         answers: [
-            {text: `0-10V`, correct: false},
-            {text: `0-5V`, correct: false},
-            {text: `0-1023`, correct: false},
-            {text: `0-255`, correct: true},
+            {text: `Changes element style`, correct: false},
+            {text: `Declares a variable`, correct: false},
+            {text: `Finds an element by ID`, correct: true},
+            
         ]
     },
     {
-        question: `Quel est le rôle de la fonction loop() dans un programme Arduino ? `,
+        question: `Which Bootstrap class is used to create a responsive table? `,
         answers: [
-            {text: `Initialiser les variables globales`, correct: false},
-            {text: `Arrêter l'exécution du programme`, correct: false},
-            {text: `Exécuter le code une seule fois`, correct: false},
-            {text: `Exécuter le code en boucle indéfiniment`, correct: true},
+            {text: `table-responsive`, correct: true},
+            {text: `table-striped`, correct: false},
+            {text: `table-bordered`, correct: false},
+            
         ]
     },
     {
-        question: `Comment peut-on lire une valeur numérique sur une broche analogique en Arduino ? `,
+        question: `What does the < p > tag define in HTML?`,
         answers: [
-            {text: `Avec la fonction readValue()`, correct: false},
-            {text: `Avec la fonction analogRead()`, correct: true},
-            {text: `Avec la fonction getAnalog()`, correct: false},
-            {text: `Avec la fonction digitaalRead()`, correct: false},
+            {text: `Paragraph`, correct: true},
+            {text: `List`, correct: false},
+            {text: `Heading`, correct: false},
+            
+        ]
+    },
+    {
+        question: `Which attribute specifies the path to an image in HTML?`,
+        answers: [
+            {text: `alt`, correct: false},
+            {text: `src`, correct: true},
+            {text: `href`, correct: false},
+            
         ]
     },
    
