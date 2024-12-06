@@ -132,52 +132,82 @@ function clearStatusClass(element){
 
 const questions = [
     {
-        question: `What is the primary concern regarding women's privacy in the digital world?`,
+        question: `Langage de Programmation d'Arduino `,
         answers: [
-            {text: `Lack of online presence`, correct: false},
-            {text: `Data breaches and personal information exploitation`, correct: true},
-            {text: `Overuse of social media`, correct: false},
-            {text: `Digital literacy among women`, correct: false},
+            {text: `HTML`, correct: false},
+            {text: `C/C++`, correct: true},
+            {text: `Python`, correct: false},
+            {text: `Java`, correct: false},
         ]
     },
     {
-        question: `What is the purpose of encryption in digital communication?`,
+        question: `Quelle est la fonction de pinMode() en Arduino ?`,
         answers: [
-            {text: `To share files publicly`, correct: false},
-            {text: `To allow companies to view private messages`, correct: false},
-            {text: `To store personal data unprotected`, correct: false},
-            {text: `To keep information secure and unreadable by unauthorized parties`, correct: true},
+            {text: `Calculer la distance avec un capteur à ultrasons`, correct: false},
+            {text: `Lire la valeur d'une broche`, correct: false},
+            {text: `Ecrire une valeursur un broche`, correct: false},
+            {text: `Initaliser une broche en entrée ou sortie`, correct: true},
         ]
     }, {
-        question: `Which of the following best describes a VPN's function in protecting privacy?`,
+        question: `Quel est le but fonction delay() dans un programme Arduino ?`,
         answers: [
-            {text: `It increases your internet speed`, correct: false},
-            {text: ` It stores personal information`, correct: false},
-            {text: ` It makes social media profiles more visible`, correct: false},
-            {text: `It hides your IP address and encrypts your internet traffic`, correct: true}
+            {text: `Déclencher un signal à une broche spécifique `, correct: false},
+            {text: ` Réduire la consommation d'énergie`, correct: false},
+            {text: ` Créer un délai entre les exécution du code`, correct: true},
+            {text: `Initialiser les entrées/sorties`, correct: false}
         ]
     }, {
-        question: `How does two-factor authentication improve women's digital security?`,
+        question: `Quelle est la plager de tension que l'Arduino peut accepter sur ses broches d'entrée ?`,
         answers: [
-            {text: `It sends spam to potential hackers`, correct: false},
-            {text: `It reduces internet speed`, correct: false},
-            {text: `It adds an extra layer of protection beyond just a password`, correct: true},
-            {text: `It requires two devices for online access`, correct: false},
+            {text: `0 à 5V`, correct: true},
+            {text: `0 à 3.3V`, correct: false},
+            {text: `0 à 12V`, correct: false},
+            {text: `1 à 5V`, correct: false},
         ]
     }, {
-        question: `Data anonymization is a technique used to protect users' personal data online, making it harder to identify individuals.`,
+        question: `Que fait la fonction analogWrite()`,
         answers: [
-            {text: `True`, correct: true},
-            {text: `False`, correct: false},
+            {text: `Convertir un valeur analogique en numérique`, correct: false},
+            {text: `Lire une valeur qnqlogique sur une broche`, correct: false},
+            {text: `Ecrire une valeur analogique sur une broche (PWM)`, correct: true},
+            {text: `Initialiser une broche en entrée`, correct: false},
+
             
         ]
     }, {
-        question: `How can companies revolutionize women's privacy online?`,
+        question: `Quelle est la fonction de Serial.begin() dans un programme Arduino ? `,
         answers: [
-            {text: `Ignoring gender-specific threats`, correct: false},
-            {text: `Increasing their online advertisements`, correct: false},
-            {text: `Limiting access to women-only platforms`, correct: false},
-            {text: `Developing gender-sensitive privacy policies and tools`, correct: true},
+            {text: `Déclare la broche pour la communication série`, correct: false},
+            {text: `Envoie un message sur le moniteur série`, correct: false},
+            {text: `Reçoit des données sur la communication série`, correct: false},
+            {text: `Démarre la communication série à une vitesse donnée`, correct: true},
+        ]
+    },
+    {
+        question: `Quelle est la portée du signal PWM(Pulse Width Modulaation) Arduino ? `,
+        answers: [
+            {text: `0-10V`, correct: false},
+            {text: `0-5V`, correct: false},
+            {text: `0-1023`, correct: false},
+            {text: `0-255`, correct: true},
+        ]
+    },
+    {
+        question: `Quel est le rôle de la fonction loop() dans un programme Arduino ? `,
+        answers: [
+            {text: `Initialiser les variables globales`, correct: false},
+            {text: `Arrêter l'exécution du programme`, correct: false},
+            {text: `Exécuter le code une seule fois`, correct: false},
+            {text: `Exécuter le code en boucle indéfiniment`, correct: true},
+        ]
+    },
+    {
+        question: `Comment peut-on lire une valeur numérique sur une broche analogique en Arduino ? `,
+        answers: [
+            {text: `Avec la fonction readValue()`, correct: false},
+            {text: `Avec la fonction analogRead()`, correct: true},
+            {text: `Avec la fonction getAnalog()`, correct: false},
+            {text: `Avec la fonction digitaalRead()`, correct: false},
         ]
     },
    
