@@ -21,7 +21,7 @@ window.location.href="./quizWebDev.html";
  })
 
 RobotDevBtn.addEventListener("click",()=>{
-  window.location.href="./quizRobotDev.html";  
+  window.location.href="./quizRobotdev.html";  
 
 })
 
