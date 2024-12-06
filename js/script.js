@@ -5,7 +5,7 @@
 // customElements.define("robot-dev",quizRobotDev)
 // customElements.define("web-dev",quizWebDev);
 window.addEventListener("load",()=>{
-    window.location.href="https://bahaeddine10.github.io/Quiz/index.html";
+    window.location.href="./index.html";
 })
 
 const WebDevBtn =document.querySelector("#Webdev-btn");
