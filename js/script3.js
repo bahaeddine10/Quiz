@@ -17,7 +17,9 @@ let shuffledQuestions , currentQuestionIndex
 function startGame(){
     startBtn.classList.add('hide');
     
-    const prog = document.createElement("div");    
+    const prog = document.createElement("div");
+ 
+
     prog.classList.add("progress-bar");
     prog.setAttribute("data-label", "Loading");
     container.appendChild(prog);
