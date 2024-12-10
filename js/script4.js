@@ -17,7 +17,9 @@ let shuffledQuestions , currentQuestionIndex
 function startGame(){
     startBtn.classList.add('hide');
     
-    const prog = document.createElement("div");    
+    const prog = document.createElement("div");
+    
+    
     prog.classList.add("progress-bar");
     prog.setAttribute("data-label", "Loading");
     container.appendChild(prog);
@@ -35,7 +37,7 @@ function startGame(){
         questionContainer.classList.remove('hide');
         setNextQuestion();   
         container.removeChild(prog);
-        
+       
       
     }, 2500);
    
@@ -127,93 +129,63 @@ function clearStatusClass(element){
 
 const questions = [
     {
-        question: `Which tag is used for the most important heading in HTML? `,
+        question: `when the term Artificial Intelligent was used for the first time ?`,
         answers: [
-            {text: `< h6 >`, correct: true},
-            {text: `< p >`, correct: false},
-            {text: `< h1 >`, correct: true},
-         
-        ]
-    },
-    {
-        question: `Which CSS property is used to set the text color?`,
-        answers: [
-            {text: `font-color`, correct: false},
-            {text: `color`, correct: true},
-            {text: `text-color`, correct: false},
-            ,
-        ]
-    }, {
-        question: `Which tag is used to create a hyperlink in HTML?
-`,
-        answers: [
-            {text: `< link >  `, correct: false},
-            {text: ` < img >`, correct: false},
-            {text: ` < a > `, correct: true},
-            
-        ]
-    }, {
-        question: `What does the 'let' keyword do in JavaScript?`,
-        answers: [
-            {text: `Declares a constant`, correct: false},
-            {text: `Declares a local variable`, correct: true},
-            {text: `Finds an element`, correct: false},
+            {text: `1955`, correct: true},
+            {text: `1989`, correct: false},
+            {text: `2020`, correct: false},
            
         ]
+    },
+    {
+        question: `how exactly AI helps in Neurology ?`,
+        answers: [
+            {text: `Personalized Treatments`, correct: true},
+            {text: `Detects when someone is in bad mental state`, correct: true},
+            {text: `Cognitive Behavioral Therapy`, correct: true},
+            
+        ]
     }, {
-        question: `The correct JAVASCRIPT syntax to change the content of the HTML element below?\n
-< p id="demo">This is JavaScript< / p >`,
+        question: `What are the proteins that form the DNA?`,
         answers: [
-            {text: `document.getElementById("demo").innerHTML="hello";`, correct: true},
-            {text: `#demo.innerHTML="hello"`, correct: false},
-            {text: `document.getelementbyname("p").innerHTML="hello";`, correct: false},
-        
+            {text: `valine,cytosine,leucine,adenine`, correct: false},
+            {text: `adenine,cytosine,thymine,guanine`, correct: true},
+            {text: `tryptophan,actin,guanine,valine`, correct:false},
             
         ]
     }, {
-        question: `Which CSS property sets the background color of an element? `,
+        question: `CRISPR was originally inspired from :`,
         answers: [
-            {text: `background-color`, correct: true},
-            {text: `color`, correct: false},
-            {text: `font-size`, correct: false},
-           ,
+            {text: `bacterias`, correct: true},
+            {text: `viruses`, correct: false},
+            {text: `fish`, correct: false},
+            
+        ]
+    }, {
+        question: `Which AI's quality encoraged researchers most to use it in genetics field `,
+        answers: [
+            {text: `its ability to predict`, correct: false},
+            {text: `its ability to analyse massive data in short time`, correct: true},
+            {text: `performance`, correct: false},
+
+            
+        ]
+    }, {
+        question: `What does EEG stands for in Neurology?`,
+        answers: [
+            {text: `Electroencephalography`, correct: false},
+            {text: `Event-Related EEG`, correct: false},
+            {text: `Electroencephalographic Signal Processing`, correct: true},
         ]
     },
     {
-        question: `What is the purpose of the 'getElementById' method in JavaScript? `,
+        question: `Who is the scientist that is considered as the father of AI ? `,
         answers: [
-            {text: `Changes element style`, correct: false},
-            {text: `Declares a variable`, correct: false},
-            {text: `Finds an element by ID`, correct: true},
-            
+            {text: `Albert Einstein`, correct: false},
+            {text: `John McCarthy`, correct: true},
+            {text: `Marie Curie`, correct: false},
         ]
     },
-    {
-        question: `Which Bootstrap class is used to create a responsive table? `,
-        answers: [
-            {text: `table-responsive`, correct: true},
-            {text: `table-striped`, correct: false},
-            {text: `table-bordered`, correct: false},
-            
-        ]
-    },
-    {
-        question: `What does the < p > tag define in HTML?`,
-        answers: [
-            {text: `Paragraph`, correct: true},
-            {text: `List`, correct: false},
-            {text: `Heading`, correct: false},
-            
-        ]
-    },
-    {
-        question: `Which attribute specifies the path to an image in HTML?`,
-        answers: [
-            {text: `alt`, correct: false},
-            {text: `src`, correct: true},
-            {text: `href`, correct: false},
-            
-        ]
-    },
+    
    
 ]
