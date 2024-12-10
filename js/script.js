@@ -4,9 +4,7 @@
 // customElements.define("choose-quiz",ChooseQuiz);
 // customElements.define("robot-dev",quizRobotDev)
 // customElements.define("web-dev",quizWebDev);
-window.addEventListener("load",()=>{
-    window.location.href="./index.html";
-})
+
 const WebDevBtn =document.querySelector("#Webdev-btn");
 const RobotDevBtn =document.querySelector("#Robotdev-btn");
 // const choose=document.querySelector("choose-quiz");
