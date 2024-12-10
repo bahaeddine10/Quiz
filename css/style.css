@@ -101,9 +101,15 @@ body.wrong{
     box-shadow: 0 0 10px 2px;
 }
 
-.btn-grid,#control{
+.btn-grid{
     display: grid;
     grid-template-columns: repeat(1,auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+#control{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
     gap: 10px;
     margin: 20px 0;
 }
